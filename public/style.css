@@ -1,5 +1,12 @@
 body {
   background: #f7f7f7;
+  /* padding: 0 2em; */
+  padding: 0;
+  margin: 0;
+}
+
+body > div {
+  padding: 0 2em;
 }
 
 .logo {
@@ -8,4 +15,21 @@ body {
 
 header {
   margin-bottom: 1em;
+}
+
+footer {
+  font-size: 9pt;
+  color: #666;
+  margin-top: 10em;
+  margin: 0;
+  padding: 4em;
+  background: #fff;
+}
+
+footer a {
+  color: #727272;
+}
+
+#ratings_reviews {
+  padding-bottom: 4em;
 }
