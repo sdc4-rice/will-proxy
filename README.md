@@ -16,8 +16,8 @@ Proxy for the following services:
     PORT=3000
     ```
 5. Start each module that you cloned at step 1.
-5. Confirm that the URL of each required bundle in `index.html` matches the URL that it is actually running at. Note that the `bid-buy` bundle URL in `index.html` currently points to its deployed URL, but the URLs of the three other bundles point to `localhost`. You will likely want to change this.
-6. Start the proxy server: `npm start`
+6. Confirm that the URL of each required bundle in `index.html` matches the URL that it is actually running at. Note that the `bid-buy` bundle URL in `index.html` currently points to its deployed URL, but the URLs of the three other bundles point to `localhost`. You will likely want to change this.
+7. Start the proxy server: `npm start`
 
 ## Usage (local)
 
@@ -30,3 +30,9 @@ For example, if your server is running on port `3000`, you can view the product 
 The style of `images-modal` may conflict with the style of `PeopleAlsoViewed`.
 
 This can be partially (but not fully) mitigated by requiring the bundle of `images-modal` after the bundle of `PeopleAlsoViewed` in `index.html`, which I have done.
+
+## Deplyed link
+
+The proxy is currently deployed at http://ec2-54-175-82-182.compute-1.amazonaws.com:8000
+
+The only module you will see when you go to it is `bid-buy` unless you are running the other three modules locally.
