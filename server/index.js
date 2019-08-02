@@ -11,7 +11,7 @@ app.use(express.static('public'));
 app.use(express.json());
 
 app.all('/items', (req, res) => {
-  fetch('http://localhost:3001/items', {
+  fetch(`http://${process.env.BIDBUY_IP}:3001/items`, {
     method: req.method,
     headers: req.headers,
     body: JSON.stringify(req.body)
